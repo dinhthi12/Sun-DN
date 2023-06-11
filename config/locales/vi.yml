@@ -1,0 +1,22 @@
+vi:
+  index:
+    title: "Sample app"
+    language: "Tiếng việt"
+    app: "sample app"
+
+  static_pages:
+    home:
+      title: "Ruby on Rails Trên Sun*"
+      note: "Đây là trang chủ của ứng dụng mẫu Hướng dẫn Ruby on Rails."
+      signup: "Đăng ký ngay."
+    help:
+      title: "Giúp đỡ"
+      note: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại trang trợ giúp Hướng dẫn Rails"
+    contact:
+      title: "Kết nối"
+
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Giúp đỡ"
+      contact: "Kết nối"

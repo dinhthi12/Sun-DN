@@ -49,3 +49,4 @@ yarn-debug.log*
 /config/credentials.yml.enc
 
 /test/*
+/vscode

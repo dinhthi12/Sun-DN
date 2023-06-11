@@ -1,0 +1,22 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t("index.app"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to static_pages_home_path do %>
+            <%= t ".home" %>
+          <% end %>
+        </li>
+        <li><%= link_to  static_pages_help_path do %>
+            <%= t ".help" %>
+          <% end %>
+        </li>
+        <li><%= link_to static_pages_contact_path do %>
+            <%= t ".contact" %>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
