@@ -1,0 +1,9 @@
+user:
+  email:
+    regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  password:
+    min_length: 8
+
+digits:
+  length_10: 10
+  length_30: 30
