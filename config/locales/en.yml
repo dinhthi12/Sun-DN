@@ -8,7 +8,7 @@ en:
     home:
       title: "Ruby on Rails on Sun*"
       note: "This is the home page for the Ruby on Rails Tutorial sample application."
-      signup: "Sign up now."
+      sign_up: "Sign up now."
     help:
       title: "Help"
       note: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help page"
@@ -20,3 +20,32 @@ en:
       home: "Home"
       help: "Help"
       contact: "Contact"
+      log_in: "Log in"
+  users:
+   new:
+      title_log_up: "Sign up"
+      intro_log_up: "Sign up"
+      user_list: "User list"
+      log_out: "Log out"
+      settings: "Settings"
+      account: "Account"
+   error:
+    str_error: "Error"
+
+  table:
+    name: "Name"
+
+  activerecord:
+   models:
+      user: "user"
+   attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirmation: "Password confirmation"
+        submit: "Create"
+  notification:
+   success: "New creation was successful"
+   err: "New creation was failed"
+   notfound: "User not found"

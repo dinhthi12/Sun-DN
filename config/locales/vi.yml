@@ -8,7 +8,7 @@ vi:
     home:
       title: "Ruby on Rails Trên Sun*"
       note: "Đây là trang chủ của ứng dụng mẫu Hướng dẫn Ruby on Rails."
-      signup: "Đăng ký ngay."
+      sign_up: "Đăng ký ngay."
     help:
       title: "Giúp đỡ"
       note: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại trang trợ giúp Hướng dẫn Rails"
@@ -20,3 +20,33 @@ vi:
       home: "Trang chủ"
       help: "Giúp đỡ"
       contact: "Kết nối"
+      log_in: "Đăng nhập"
+  users:
+    new:
+      title_log_up: "đăng ký"
+      intro_log_up: "đăng ký"
+      title_list: "Danh sách người dùng"
+      log_out: "Đăng xuất"
+      settings: "Cài đặt"
+      account: "Tài khoản"
+    error:
+      str_error: "Lỗi"
+  table:
+   name: "Tên"
+   email: "Email"
+   action: "Hành động"
+ 
+  activerecord:
+   models:
+      user: "Người dùng"
+   attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
+        confirmation: "Xác nhận mật khẩu"
+        submit: "Tạo"
+  notification:
+   success: "Tạo mới đã Thành công"
+   err: "Tạo mới đã thất bại"
+   notfound: "Không tìm thấy người dùng"
