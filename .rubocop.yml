@@ -17,6 +17,7 @@ AllCops:
     - 'lib/**/*'
     - '**/*.gemspec'
     - 'Gemfile'
+    - 'app/views/**/*'
   Exclude:
     - 'vendor/**/*'
     - 'config/unicorn.rb'
@@ -25,7 +26,6 @@ AllCops:
     - 'spec/**/*'
     - 'script/rails'
     - 'config/**/*'
-    - 'app/views/**/*'
     - 'app/assets/**/*'
     - 'app/javascript/**/*'
     - '.idea/**/*'

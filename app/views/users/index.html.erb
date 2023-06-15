@@ -1,0 +1,15 @@
+<h1><%=t "users.new.title_list" %></h1>
+
+<table border = "2">
+  <thead>
+    <tr>   
+    <th><%= t "table.name" %></th>   
+    <th><%= t "table.email" %></th>    
+    <th><%= t "table.action" %></th>  
+    </tr>   
+  </thead>
+
+  <tbody>
+    <%= render "users/loadUsers" %>
+  </tbody>
+</table>

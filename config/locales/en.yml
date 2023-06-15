@@ -20,3 +20,29 @@ en:
       home: "Home"
       help: "Help"
       contact: "Contact"
+  
+  users:
+   new:
+      title_log_up: "Sign up"
+      intro_log_up: "Sign up"
+      user_list: "User list"
+   error:
+    str_error: "Error"
+
+  table:
+    name: "Name"
+
+  activerecord:
+   models:
+      user: "user"
+   attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirmation: "Password confirmation"
+        submit: "Create"
+  notification:
+   success: "New creation was successful"
+   err: "New creation was failed"
+   notfound: "User not found"

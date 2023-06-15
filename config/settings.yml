@@ -1,8 +1,10 @@
 user:
   email:
-    regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+/
   password:
     min_length: 8
+  user_url: "https://secure.gravatar.com/avatar/#{gravatar_id}"
+  intro_log_up: "Sign up now!"
 
 digits:
   length_10: 10

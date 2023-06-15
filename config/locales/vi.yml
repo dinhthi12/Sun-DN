@@ -20,3 +20,29 @@ vi:
       home: "Trang chủ"
       help: "Giúp đỡ"
       contact: "Kết nối"
+  users:
+    new:
+      title_log_up: "đăng ký"
+      intro_log_up: "đăng ký"
+      title_list: "Danh sách người dùng"
+    error:
+      str_error: "Lỗi"
+  table:
+   name: "Tên"
+   email: "Email"
+   action: "Hành động"
+ 
+  activerecord:
+   models:
+      user: "Người dùng"
+   attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
+        confirmation: "Xác nhận mật khẩu"
+        submit: "Tạo"
+  notification:
+   success: "Tạo mới đã Thành công"
+   err: "Tạo mới đã thất bại"
+   notfound: "Không tìm thấy người dùng"
