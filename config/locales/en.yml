@@ -30,6 +30,7 @@ en:
       settings: "Settings"
       account: "Account"
       log_in: "Log in"
+      remember_me: "Remember me"
    error:
     str_error: "Error"
 
