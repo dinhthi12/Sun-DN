@@ -1,0 +1,15 @@
+  <%= form_for(@user) do |f| %>
+    <%= f.label :name, t(User.human_attribute_name :name) %>
+    <%= f.text_field :name, class: "form-control" %>
+
+    <%= f.label :email, t(User.human_attribute_name :email) %>
+    <%= f.email_field :email, class: "form-control" %>
+
+    <%= f.label :password, t(User.human_attribute_name :password) %>
+    <%= f.password_field :password, class: "form-control" %>
+
+    <%= f.label :password_confirmation, t(User.human_attribute_name :confirmation) %>
+    <%= f.password_field :password_confirmation, class: "form-control" %>
+
+    <%= f.submit t(".update"), class: "btn btn-primary" %>
+  <% end %>

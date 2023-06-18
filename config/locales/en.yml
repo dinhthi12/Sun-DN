@@ -3,7 +3,6 @@ en:
     title: "Sample app"
     language: "English"
     app: "sample app"
-
   static_pages:
     home:
       title: "Ruby on Rails on Sun*"
@@ -14,13 +13,11 @@ en:
       note: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help page"
     contact:
       title: "Contact"
-
   layouts:
     header:
       home: "Home"
       help: "Help"
       contact: "Contact"
-
   users:
    new:
       title_log_up: "Sign up"
@@ -33,10 +30,8 @@ en:
       remember_me: "Remember me"
    error:
     str_error: "Error"
-
   table:
     name: "Name"
-
   activerecord:
    models:
       user: "user"
@@ -48,6 +43,6 @@ en:
         confirmation: "Password confirmation"
         submit: "Create"
   notification:
-   success: "New creation was successful"
-   err: "New creation was failed"
-   notfound: "User not found"
+    success: "New creation was successful"
+    err: "New creation was failed"
+    notfound: "User not found"

@@ -3,7 +3,6 @@ vi:
     title: "Sample app"
     language: "Tiếng việt"
     app: "sample app"
-
   static_pages:
     home:
       title: "Ruby on Rails Trên Sun*"
@@ -14,7 +13,6 @@ vi:
       note: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại trang trợ giúp Hướng dẫn Rails"
     contact:
       title: "Kết nối"
-
   layouts:
     header:
       home: "Trang chủ"
@@ -33,14 +31,13 @@ vi:
     error:
       str_error: "Lỗi"
   table:
-   name: "Tên"
-   email: "Email"
-   action: "Hành động"
-
+    name: "Tên"
+    email: "Email"
+    action: "Hành động"
   activerecord:
-   models:
+    models:
       user: "Người dùng"
-   attributes:
+    attributes:
       user:
         name: "Tên"
         email: "Email"
@@ -48,6 +45,6 @@ vi:
         confirmation: "Xác nhận mật khẩu"
         submit: "Tạo"
   notification:
-   success: "Tạo mới đã Thành công"
-   err: "Tạo mới đã thất bại"
-   notfound: "Không tìm thấy người dùng"
+    success: "Tạo mới đã Thành công"
+    err: "Tạo mới đã thất bại"
+    notfound: "Không tìm thấy người dùng"

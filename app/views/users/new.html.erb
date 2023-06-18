@@ -1,6 +1,6 @@
 <% provide :title, t("users.new.title_log_up") %>
 <div class="jumbotron">
-  <h1 class="text-center text-danger"><%= t "users.new.intro_log_up" %></h1>
+  <h1 class="text-center text-danger"><%= t "users.new.title_log_up" %></h1>
   <div class="row">
     <div class="col-md-6 offset-md-3">
       <%= form_for @user do |f| %>
@@ -13,7 +13,7 @@
         <%= f.password_field :password, class: "form-control" %>
         <%= f.label :password_confirmation, t(User.human_attribute_name :confirmation) %>
         <%= f.password_field :password_confirmation, class: "form-control" %>
-        <%= f.submit t(".intro_log_up"), class: "btn btn-primary btn-form" %>
+        <%= f.submit t("users.new.intro_log_up"), class: "btn btn-primary btn-form" %>
       <% end %>
     </div>
   </div>

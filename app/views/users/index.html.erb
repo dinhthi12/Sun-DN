@@ -1,5 +1,5 @@
 <h1><%=t "users.new.title_list" %></h1>
-<table border = "2">
+<table class="table">
   <thead>
     <tr>
       <th><%= t "table.name" %></th>
@@ -8,6 +8,8 @@
     </tr>
   </thead>
   <tbody>
-    <<%= render @users %>>
   </tbody>
+  <%= render @users %>
+</tbody>
 </table>
+<%== pagy_nav(@pagy)%>
