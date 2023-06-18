@@ -1,9 +1,4 @@
-@import 'bootstrap-sprockets';
 @import 'bootstrap';
-
-body {
-  padding-top: 60px;
-}
 
 section {
   overflow: auto;
@@ -26,7 +21,7 @@ textarea {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $black;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -34,7 +29,6 @@ textarea {
 }
 
 #logo:hover {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -77,11 +71,22 @@ input{
   margin-bottom: 10px;
 }
 form label{
-  color: #0045a0;
+  color: $blue;
 }
 #error_explanation {
-  color: #dc3545;
+  color: $red;
   ul {
     margin: 0 0 30px 0;
   }
+}
+.dropdown-toggle{
+  color: $white;
+  cursor: pointer
+}
+.dropdown-toggle:hover{
+  color: $white;
+}
+.navbar-right{
+  display: flex;
+  align-items: center;
 }

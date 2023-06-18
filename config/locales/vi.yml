@@ -25,13 +25,17 @@ vi:
       title_log_up: "đăng ký"
       intro_log_up: "đăng ký"
       title_list: "Danh sách người dùng"
+      log_out: "Đăng xuất"
+      settings: "Cài đặt"
+      account: "Tài khoản"
+      log_in: "Đăng nhập"
     error:
       str_error: "Lỗi"
   table:
    name: "Tên"
    email: "Email"
    action: "Hành động"
- 
+
   activerecord:
    models:
       user: "Người dùng"
