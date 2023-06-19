@@ -20,12 +20,16 @@ en:
       home: "Home"
       help: "Help"
       contact: "Contact"
-  
+
   users:
    new:
       title_log_up: "Sign up"
       intro_log_up: "Sign up"
       user_list: "User list"
+      log_out: "Log out"
+      settings: "Settings"
+      account: "Account"
+      log_in: "Log in"
    error:
     str_error: "Error"
 

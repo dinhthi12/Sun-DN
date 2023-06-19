@@ -5,13 +5,13 @@
     <div class="col-md-6 offset-md-3">
       <%= form_for @user do |f| %>
         <%= render "shared/error_message" %>
-        <%= f.label :name, t(User.human_attribute_name "name") %>
+        <%= f.label :name, t(User.human_attribute_name :name) %>
         <%= f.text_field :name, class: "form-control" %>
-        <%= f.label :email, t(User.human_attribute_name "email") %>
+        <%= f.label :email, t(User.human_attribute_name :email) %>
         <%= f.email_field :email, class: "form-control" %>
-        <%= f.label :password, t(User.human_attribute_name "password") %>
+        <%= f.label :password, t(User.human_attribute_name :password) %>
         <%= f.password_field :password, class: "form-control" %>
-        <%= f.label :password_confirmation, t(User.human_attribute_name "confirmation") %>
+        <%= f.label :password_confirmation, t(User.human_attribute_name :confirmation) %>
         <%= f.password_field :password_confirmation, class: "form-control" %>
         <%= f.submit t(".intro_log_up"), class: "btn btn-primary btn-form" %>
       <% end %>

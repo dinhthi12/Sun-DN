@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+  before_action :load_user, only: :show
   def index
-    @user = User.sort_by_name(:asc, :asc)
+    @users = User.sort_by_name(:asc, :asc)
   end
 
   def new
@@ -24,6 +25,15 @@ class UsersController < ApplicationController
       flash[:warning] = t "notification.err"
       render :new
     end
+  end
+
+  private
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t "notification.err"
+    redirect_to root_path
   end
 
   private
