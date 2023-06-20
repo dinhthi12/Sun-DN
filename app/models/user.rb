@@ -4,10 +4,10 @@ class User < ApplicationRecord
   before_save ->{email.downcase!}
 
   validates :name, presence: true,
-    length: {minimum: Settings.digits.length_10,
+    length: {minimum: Settings.digits.length_4,
              maximum: Settings.digits.length_30}
   validates :email, presence: true, uniqueness: true,
-    length: {minimum: Settings.digits.length_10,
+    length: {minimum: Settings.digits.length_4,
              maximum: Settings.digits.length_30},
     format: {with: Settings.user.email.regex}
   validates :password, presence: true,
