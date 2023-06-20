@@ -24,8 +24,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      @user.send_activation_email
+      flash[:info] = "notification.check_mail"
+      redirect_to root_url
       flash[:success] = t "notification.success"
-      redirect_to @user
     else
       flash[:warning] = t "notification.err"
       render :new
@@ -58,7 +60,7 @@ class UsersController < ApplicationController
   def correct_user
     return if current_user? @user
 
-    flash[:error] = "notification.not_edit."
+    flash[:error] = "notification.not_edit"
     redirect_to root_url
   end
 

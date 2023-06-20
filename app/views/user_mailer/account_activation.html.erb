@@ -1,0 +1,11 @@
+<h1>
+  <%= t "welcome.index.title" %>
+</h1>
+<p>
+  <%= t("users.new.say_hello", username: @user.name) %>
+</p>
+<p>
+  <%= t "users.edit.mail_text" %>
+</p>
+<%= link_to t("users.new.active"), edit_account_activation_url(id: @user.activation_token,
+  email: @user.email, token: @user.activation_token) %>
