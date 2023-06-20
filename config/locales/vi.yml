@@ -29,6 +29,7 @@ vi:
       settings: "Cài đặt"
       account: "Tài khoản"
       log_in: "Đăng nhập"
+      remember_me: "ghi nhớ đăng nhập"
     error:
       str_error: "Lỗi"
   table:
