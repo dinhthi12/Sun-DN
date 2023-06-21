@@ -22,14 +22,14 @@
       <% if logged_in? %>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           <%= t "user.account" %>
+           <%= t "users.new.account" %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="nav-link">
               <%= link_to t("users.new.log_out"), logout_path, method: :delete %>
             </div>
             <div class="nav-link">
-              <%= link_to t(".setting"), edit_user_path(current_user) %>
+              <%= link_to t("users.new.settings"), edit_user_path(current_user) %>
             </div>
             <div class="dropdown-divider"></div>
           </div>

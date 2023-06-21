@@ -28,6 +28,10 @@ vi:
       account: "Tài khoản"
       log_in: "Đăng nhập"
       remember_me: "ghi nhớ đăng nhập"
+      update: "thay đổi"
+      active: "Kích hoạt"
+      say_hello: "Xin chao %{username}"
+      delete: "Xóa"
     error:
       str_error: "Lỗi"
   table:

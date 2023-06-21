@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :activation_token
 
+  before_create :create_activation_digest
   before_save ->{email.downcase!}
 
   validates :name, presence: true,
@@ -38,13 +39,27 @@ class User < ApplicationRecord
     update_column :remember_digest, User.digest(remember_token)
   end
 
-  def authenticated? remember_token
-    return false unless remember_digest
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+    BCrypt::Password.new(digest).is_password? token
   end
 
   def forget
     update_column :remember_digest, nil
+  end
+
+  def activate
+    update_columns activated: true, activated_at: Time.zone.now
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest(activation_token)
   end
 end

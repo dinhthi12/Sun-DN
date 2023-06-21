@@ -47,6 +47,8 @@ yarn-debug.log*
 /.gitattributes
 
 /config/credentials.yml.enc
-
 /test/*
 /vscode
+
+# Ignore application configuration
+/config/application.yml
