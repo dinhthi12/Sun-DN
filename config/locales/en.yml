@@ -28,6 +28,18 @@ en:
       account: "Account"
       log_in: "Log in"
       remember_me: "Remember me"
+      say_hello: "Say hello %{username}"
+      email_reset_password: Email sent with password reset instructions
+      no_email: Email address not found
+      not_empty: can't be empty
+      password_expire: Password reset has expired
+      confirm_password: Password Confirmation
+      update_password: Update password
+      forgot_password: Forgot Password
+      submit_form: Submit
+      mail_title: Activation Account
+      mail_reset_password: Reset Password
+      link_expired: This link will expire in two hours.
    error:
     str_error: "Error"
   table:
