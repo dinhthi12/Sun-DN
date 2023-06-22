@@ -32,6 +32,17 @@ vi:
       active: "Kích hoạt"
       say_hello: "Xin chao %{username}"
       delete: "Xóa"
+      email_reset_password: Email được gửi với hướng dẫn đặt lại mật khẩu
+      no_email: Email chưa được đăng ký
+      not_empty: không được để trống
+      password_expire: mật khẩu đã hết hạn
+      confirm_password: xác nhận mật khẩu
+      update_password: cập nhật mật khẩu
+      forgot_password: quên mật khẩu
+      submit_form: gửi
+      mail_title: kích hoạt tài khoản
+      mail_reset_password: đổi mật khẩu
+      link_expired: link sẽ hết hạn sau 2 giờ.
     error:
       str_error: "Lỗi"
   table:
