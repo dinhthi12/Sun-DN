@@ -14,11 +14,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    redirect_to root_path
-    flash[:warning] = t "notification.notfound"
+    @pagy, @microposts = pagy @user.microposts, items: Settings.digits.length_6
   end
 
   def create

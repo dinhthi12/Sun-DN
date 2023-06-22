@@ -34,20 +34,24 @@ textarea {
 
 aside {
   section.user_info {
-  margin-top: 20px;
+    margin-top: 20px;
   }
+
   section {
     padding: 10px 0;
     margin-top: 20px;
+
     &:first-child {
       border: 0;
       padding-top: 0;
     }
+
     span {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
+
     h1 {
       font-size: 1.4em;
       text-align: left;
@@ -57,36 +61,97 @@ aside {
     }
   }
 }
+
 .gravatar {
   float: left;
   margin-right: 10px;
 }
+
 .gravatar_edit {
   margin-top: 15px;
 }
-.btn-form{
+
+.btn-form {
   margin: 20px auto
 }
-input{
+
+input {
   margin-bottom: 10px;
 }
-form label{
+
+form label {
   color: $blue;
 }
+
 #error_explanation {
   color: $red;
+
   ul {
     margin: 0 0 30px 0;
   }
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
   color: $white;
   cursor: pointer
 }
-.dropdown-toggle:hover{
+
+.dropdown-toggle:hover {
   color: $white;
 }
-.navbar-right{
+
+.navbar-right {
   display: flex;
   align-items: center;
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+
+  input {
+    border: 0;
+  }
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $black;
+    display: block;
+    margin-left: 60px;
+  }
 }

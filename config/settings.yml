@@ -14,3 +14,11 @@ digits:
   length_30: 30
   size_80: 80
   expired_2: 2
+
+micropost:
+  image_max_5MB: 5
+  image_200: 200
+
+valid_image_format: "image/jpeg,image/gif,image/png"
+info_image: "230d3040650cb452ed1d.jpg"
+width_200: "200px"

@@ -45,6 +45,17 @@ vi:
       link_expired: link sẽ hết hạn sau 2 giờ.
     error:
       str_error: "Lỗi"
+  micrpost:
+    new:
+      success: Tạo mới thành công
+      articles: Danh sách bài viết
+      micrpost: bài viết
+      content: Tiêu đề
+      content: Nội dung
+      alert: Chọn file nhỏ hơn 5MB
+      not_found: Không tìm thấy bài viết
+    delete:
+      success: Xoa thanh cong
   table:
     name: "Tên"
     email: "Email"
