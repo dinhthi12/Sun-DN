@@ -1,10 +1,29 @@
 <% provide :title, t("static_pages.home.title") %>
-<div class="center jumbotron">
-  <h1><%= t "static_pages.home.title" %></h1>
-  <h2>
-    <%= t "static_pages.home.note" %>
-  </h2>
-  <%= link_to signup_path, class: "btn btn-lg btn-primary" do %>
-    <%= t "static_pages.home.signup" %>
-  <% end %>
-</div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".micropost_feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t "static_pages.home.title" %></h1>
+    <h2>
+      <%= t "static_pages.home.note" %>
+    </h2>
+    <%= link_to signup_path, class: "btn btn-lg btn-primary" do %>
+      <%= t "static_pages.home.signup" %>
+    <% end %>
+  </div>
+  <%= link_to image_tag(Settings.info_image, alt: t(".logo"), width: Settings.width_200),
+    Settings.rails_page %>
+<% end %>

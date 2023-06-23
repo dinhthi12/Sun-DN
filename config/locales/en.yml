@@ -40,6 +40,18 @@ en:
       mail_title: Activation Account
       mail_reset_password: Reset Password
       link_expired: This link will expire in two hours.
+  micropost:
+    new:
+      success: Created new
+      microposts: Articles Feed
+      micropost: article
+      title: Title
+      content: Body
+      alert: Choose file which has size smaller than 5MB
+      not_found: Not Found
+      failed: Failed
+    delete:
+      success: Delete successfully
    error:
     str_error: "Error"
   table:
