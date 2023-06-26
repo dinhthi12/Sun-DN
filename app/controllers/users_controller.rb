@@ -5,8 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.sort_by_name(:asc, :asc), items:
-        Settings.digits.length_6)
+    @pagy, @users = pagy User.order_by_name
   end
 
   def new
@@ -49,6 +48,18 @@ class UsersController < ApplicationController
       flash[:danger] = "notification.not_destroy"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t "users.show_follow.following_title"
+    @pagy_users, @users = pagy @user.following.order_by_name
+    render :show_follow
+  end
+
+  def followers
+    @title = t "users.show_follow.followers_title"
+    @pagy_users, @users = pagy @user.followers.order_by_name
+    render :show_follow
   end
 
   private
